@@ -64,7 +64,7 @@ CACHE_FILE_DEFAULT = os.path.join(os.path.dirname(__file__), '.tld_cache_file.pi
 CACHE_FILE = os.path.expanduser(os.environ.get("TLDEXTRACT_CACHE", CACHE_FILE_DEFAULT))
 
 PUBLIC_SUFFIX_LIST_URL = \
-    'https://raw.github.com/mozilla/mozilla-central/master/netwerk/dns/effective_tld_names.dat'
+    'https://raw.github.com/GJL/mozilla-central/master/netwerk/dns/effective_tld_names.dat'
 
 SCHEME_RE = re.compile(r'^([' + scheme_chars + ']+:)?//')
 IP_RE = re.compile(r'^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$')
